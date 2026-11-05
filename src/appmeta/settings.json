@@ -1,0 +1,50 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "source_url": {
+      "type": "string",
+      "label": "Source URL",
+      "default": "",
+      "max_length": 255,
+      "sensitive": false
+    },
+    "token": {
+      "type": "string",
+      "label": "Access token",
+      "default": "",
+      "max_length": 255,
+      "sensitive": true
+    },
+    "refresh_s": {
+      "type": "integer",
+      "label": "Refresh (sec)",
+      "default": 30,
+      "min": 10,
+      "max": 3600,
+      "step": 1
+    },
+    "provider": {
+      "type": "enum",
+      "label": "Provider",
+      "default": "json",
+      "options": [
+        {
+          "value": "json",
+          "label": "JSON adapter"
+        },
+        {
+          "value": "home_assistant",
+          "label": "Home Assistant"
+        }
+      ]
+    },
+    "entity": {
+      "type": "string",
+      "label": "Media player entity",
+      "default": "media_player.office",
+      "max_length": 128,
+      "sensitive": false
+    }
+  }
+}
