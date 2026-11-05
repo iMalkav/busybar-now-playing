@@ -1,0 +1,56 @@
+{
+  "captured_at": "2026-11-05T13:53:30.525697+00:00",
+  "application": {
+    "format_version": 1,
+    "id": "app.imalkav.now_playing",
+    "name": "Now Playing",
+    "version": "0.1.0",
+    "api_version": "27.14.0",
+    "author": "iMalkav",
+    "description": "Track information and playback controls for your desk.",
+    "heap_size_kib": 384,
+    "debug": false
+  },
+  "firmware": {
+    "version": "r1051",
+    "target": 21,
+    "branch": "dev",
+    "build_date": "2026-10-30",
+    "commit_hash": "6ee64ba1",
+    "intercom_version": "6ee64ba1",
+    "nwp_version": "1611.2.1.1.255.11.71",
+    "matter_version": "1.0"
+  },
+  "api_version": "27.15.0",
+  "method": "GET /api/screen?display=0 and display=1; base64 decoded and saved as PNG without resizing or retouching",
+  "settings": {
+    "version": 1,
+    "values": {
+      "source_url": "https://raw.githubusercontent.com/iMalkav/busybar-now-playing/011b4a2f619e82fc112143fa61d3220c337cb96f/examples/response.json",
+      "token": "",
+      "refresh_s": 30,
+      "provider": "json",
+      "entity": "media_player.office"
+    }
+  },
+  "inputs": [],
+  "data_note": "Example JSON data served from the public source repository; these are demonstration values, not a live third-party integration.",
+  "fixture": "examples/response.json",
+  "frames": [
+    {
+      "path": "screenshots/front.png",
+      "width": 72,
+      "height": 16,
+      "frame_sha256": "08b55b03a762924d7ae9a81a9b3abb6c678b7476c2d80f1a2953b8eddda11423",
+      "png_sha256": "95f7cd1f720c1f0b08ae70c0965b2ac576c9a87ce75cdf09769f8b86b6133a69"
+    },
+    {
+      "path": "screenshots/back.png",
+      "width": 160,
+      "height": 80,
+      "frame_sha256": "7545c33a8303e6b176a29491610db05ec8f717623627221e452e26511019921f",
+      "png_sha256": "dad689c3438dcef7bb98cc9c9c796f0d46af2a0602403b9bb2a68cab13f61dc7"
+    }
+  ],
+  "verification": "Installed, launched, captured both displays, then quit via the device API. This is not comprehensive physical-device testing or verification on the latest release firmware."
+}
